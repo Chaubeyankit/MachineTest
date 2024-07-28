@@ -1,0 +1,17 @@
+{
+  "name": "machinetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently -n \"client,server\" -c \"bgGreen,bgRed\" \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "Ankit Chaubey",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
